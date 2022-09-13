@@ -1,6 +1,8 @@
 With new React version, you don't need to import react w/ each component
 //import React from 'react' can be omitted
 
+Start with npm install to get dependencies and then npm start to run.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
