@@ -3,8 +3,7 @@ import ReactDom from 'react-dom'
 
 
 function Greeting(){
-  return <h4>What up bitches?
-
+  return <h4>What up bitches
     sick board
   </h4>
 }
