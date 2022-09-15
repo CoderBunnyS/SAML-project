@@ -1,11 +1,13 @@
 import ReactDom from 'react-dom'
+import Testing from './testing'
 
 
 
 function Greeting(){
-  return <h4>What up bitches
-    sick board
-  </h4>
+  return <div>This is Bunny and this is my first component.
+    <Testing />
+  </div>
+
 }
 
 ReactDom.render(<Greeting />, document.getElementById('root'))
