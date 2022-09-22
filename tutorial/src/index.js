@@ -2,7 +2,7 @@ import ReactDom from 'react-dom'
 import Testing from './testing'
 
 //Stateless functional component
-//always return JSX
+//We always return JSX
 
 function Greeting(){
   return <div>This is Bunny and this is my first component.
