@@ -7,7 +7,6 @@ import Testing from './testing'
 function Greeting(){
   return <div>This is Bunny and this is my first component.
     <Testing />
-    <Testing />
   </div>
 
 }
