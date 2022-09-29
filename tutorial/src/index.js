@@ -3,12 +3,30 @@ import Testing from './testing'
 
 //Stateless functional component
 //We always return JSX
+//Nested Components, React Tools
 
-function Greeting(){
-  return <div>This is Bunny and this is my first component.
-    <Testing />
-  </div>
+function BookList(){
+  return <section>
+    <Book />
+    <Image />
+    <Author />
+  </section>
 
 }
 
-ReactDom.render(<Greeting />, document.getElementById('root'))
+
+
+const Book = () => {
+  return <article>
+  this is a book
+</article>
+}
+
+const Image = () => {
+  return <div>Book Image</div>
+}
+
+const Author = () => {
+  return <div>Author Name</div>
+}
+ReactDom.render(<BookList />, document.getElementById('root'))
