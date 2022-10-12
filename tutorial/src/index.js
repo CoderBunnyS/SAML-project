@@ -1,5 +1,5 @@
 import ReactDom from 'react-dom'
-import Testing from './testing'
+//import Testing from './testing'
 
 //Stateless functional component
 //We always return JSX
@@ -8,8 +8,9 @@ import Testing from './testing'
 function BookList(){
   return <section>
     <Book />
+    {/* <Title />
     <Image />
-    <Author />
+    <Author /> */}
   </section>
 
 }
@@ -18,15 +19,21 @@ function BookList(){
 
 const Book = () => {
   return <article>
-  this is a book
+  <Title />
+  <Image />
+  <Author />
+  <Author />
 </article>
 }
 
+const Title = () => {
+  return <div><h3>Harry Potter and the Order of the Phoenix</h3></div>
+}
 const Image = () => {
-  return <div>Book Image</div>
+  return <img src="https://images-na.ssl-images-amazon.com/images/I/71tR2ZEgPYL._AC_UL254_SR254,254_.jpg" alt="Book Cover"></img>
 }
 
 const Author = () => {
-  return <div>Author Name</div>
+  return <div>JK Rowling</div>
 }
 ReactDom.render(<BookList />, document.getElementById('root'))
