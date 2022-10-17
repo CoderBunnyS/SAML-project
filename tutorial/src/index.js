@@ -1,5 +1,6 @@
 import ReactDom from 'react-dom'
 import Book from './book'
+import './index.css'
 //import Testing from './testing'
 
 //Stateless functional component
@@ -7,13 +8,8 @@ import Book from './book'
 //Nested Components, React Tools
 
 function BookList(){
-  return <section>
+  return <section className='booklist'>
     <Book />
-    <Book />
-    <Book />
-    <Book />
-    <Book />
-
   </section>
 
 }
